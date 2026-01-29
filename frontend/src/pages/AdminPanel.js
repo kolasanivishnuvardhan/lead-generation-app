@@ -22,6 +22,7 @@ const Dashboard = () => {
 
   const fetchStats = async () => {
     try {
+      console.log('Fetching stats from:', process.env.REACT_APP_API_URL);
       const [projects, clients, contacts, newsletter] = await Promise.all([
         projectAPI.getAll(),
         clientAPI.getAll(),
@@ -37,6 +38,14 @@ const Dashboard = () => {
       setLoading(false);
     } catch (error) {
       console.error('Error fetching stats:', error);
+      console.error('API URL:', process.env.REACT_APP_API_URL);
+      // Still show the dashboard even if API fails
+      setStats({
+        projects: 0,
+        clients: 0,
+        contacts: 0,
+        subscribers: 0
+      });
       setLoading(false);
     }
   };
