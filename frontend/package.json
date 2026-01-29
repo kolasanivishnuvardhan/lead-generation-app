@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "craco build && node -e \"require('fs').copyFileSync('render.toml', 'build/render.toml')\"",
     "build:css": "postcss src/**/*.css --dir build/static/css",
     "test": "craco test",
     "eject": "react-scripts eject"
