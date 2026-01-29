@@ -17,6 +17,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log('Dashboard mounted, fetching stats...');
     fetchStats();
   }, []);
 
@@ -118,6 +119,7 @@ const Dashboard = () => {
 
 const AdminPanel = () => {
   const location = useLocation();
+  console.log('AdminPanel rendering, location:', location.pathname);
 
   return (
     <div className="admin-panel">
