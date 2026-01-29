@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://frontend-y447.onrender.com', // Update this with actual frontend URL
+  'https://leadgen-frontend-17zu.onrender.com',
   'https://lead-generation-app.vercel.app',
   process.env.FRONTEND_URL
 ].filter(Boolean);
