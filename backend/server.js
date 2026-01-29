@@ -11,7 +11,8 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://your-frontend.vercel.app', // Update this after frontend deployment
+  'https://frontend-y447.onrender.com', // Update this with actual frontend URL
+  'https://lead-generation-app.vercel.app',
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
