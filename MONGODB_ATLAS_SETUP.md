@@ -12,7 +12,7 @@ The error "bad auth : authentication failed" means there's an issue with your Mo
 2. Log in to your account
 3. Click on **Database Access** in the left sidebar
 4. Check your database user:
-   - Username: `kolasanivishnuvardhan_db_user`
+   - Username: `your_database_username`
    - Make sure the password is correct
 
 ### Step 2: Create/Update Database User
@@ -21,7 +21,7 @@ If the user doesn't exist or you forgot the password:
 
 1. Click **Database Access** → **Add New Database User**
 2. Choose **Password** authentication
-3. Set username: `kolasanivishnuvardhan_db_user`
+3. Set username: `your_database_username`
 4. Set a NEW password (write it down!)
    - **IMPORTANT**: Avoid special characters like: `@ : / ? # [ ] % & =`
    - Use only: letters, numbers, and `-` or `_`
@@ -47,7 +47,7 @@ If the user doesn't exist or you forgot the password:
 5. Copy the connection string
 6. It should look like:
    ```
-   mongodb+srv://kolasanivishnuvardhan_db_user:<password>@cluster0.s76ogk4.mongodb.net/?retryWrites=true&w=majority
+   mongodb+srv://your_username:<password>@your_cluster.mongodb.net/?retryWrites=true&w=majority
    ```
 
 ### Step 5: Update .env File
@@ -55,7 +55,7 @@ If the user doesn't exist or you forgot the password:
 Replace `<password>` with your actual password and add database name:
 
 ```env
-MONGODB_URI=mongodb+srv://kolasanivishnuvardhan_db_user:YOUR_ACTUAL_PASSWORD@cluster0.s76ogk4.mongodb.net/leadgeneration?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://your_username:your_password@your_cluster.mongodb.net/leadgeneration?retryWrites=true&w=majority
 ```
 
 **If your password has special characters**, URL encode them:

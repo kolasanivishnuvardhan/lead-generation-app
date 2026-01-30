@@ -64,10 +64,11 @@ git push -u origin main
    
 5. **Add Environment Variables** (click "Environment Variables"):
    ```
-   MONGODB_URI = mongodb+srv://kolasanivishnuvardhan_db_user:kvv_mongodb8@cluster0.s76ogk4.mongodb.net/leadgeneration?retryWrites=true&w=majority
+   MONGODB_URI = your_mongodb_connection_string_here
    NODE_ENV = production
    PORT = 5000
    ```
+   Replace `your_mongodb_connection_string_here` with your actual MongoDB Atlas connection string
 
 6. Click **"Deploy"**
 7. Wait 2-3 minutes
